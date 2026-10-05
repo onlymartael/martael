@@ -1,0 +1,1552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>martael — a necessary persona</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="martael — a necessary persona - The official site. Enter martael's world of music and stream on all platforms.">
+<meta property="og:title" content="martael">
+<meta property="og:description" content="a necessary persona.">
+<meta property="og:type" content="music.musician">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://martael.com">
+<meta property="og:site_name" content="martael">
+<meta property="og:image" content="https://martael.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="martael, a necessary persona">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="martael">
+<meta name="twitter:description" content="a necessary persona.">
+<meta name="twitter:image" content="https://martael.com/og.png">
+<link rel="canonical" href="https://martael.com/">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png?v=2" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="preload" href="/ojuju-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bodoni-moda-500.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "martael",
+  "alternateName": [
+    "@onlymartael",
+    "martael's world"
+  ],
+  "url": "https://martael.com/",
+  "description": "martael — a necessary persona. Official website and music.",
+  "sameAs": [
+    "https://open.spotify.com/artist/6u88p05K7XgZTTlGvm7OS6",
+    "https://music.apple.com/gb/artist/martael/1883549379",
+    "https://soundcloud.com/martael",
+    "https://www.tiktok.com/@onlymartael",
+    "https://www.instagram.com/onlymartael/",
+    "https://www.youtube.com/@onlymartael"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicRecording",
+  "name": "infinite tsukuyomi",
+  "byArtist": { "@type": "MusicGroup", "name": "martael", "url": "https://martael.com/" },
+  "url": "https://open.spotify.com/track/5T8sEGkOIxPmQPHg7psTeu",
+  "datePublished": "2026-03-07",
+  "duration": "PT2M07S",
+  "sameAs": [
+    "https://open.spotify.com/track/5T8sEGkOIxPmQPHg7psTeu",
+    "https://music.apple.com/gb/album/infinite-tsukuyomi/1883569006?i=1883569007",
+    "https://song.link/s/5T8sEGkOIxPmQPHg7psTeu"
+  ]
+}
+</script>
+<style>
+  /* self-hosted: the wordmark font, preloaded so the hero name doesn't jump */
+  @font-face {
+    font-family: "Ojuju";
+    src: url("/ojuju-800.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  /* self-hosted: no third-party font requests (faster, and no visitor IPs sent to Google) */
+  @font-face { font-family: "Bodoni Moda"; src: url("/fonts/bodoni-moda-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Bodoni Moda"; src: url("/fonts/bodoni-moda-italic-400.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+  @font-face { font-family: "Hanken Grotesk"; src: url("/fonts/hanken-grotesk.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+  /* the kanji used on the page, subset to just those glyphs */
+  @font-face { font-family: "Noto Serif JP"; src: url("/fonts/noto-serif-jp-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+  :root {
+    --ink: #000;
+    --panel: #151719;
+    --gutter: #2b2f34;
+    --steel: #8c939b;
+    --silver: #d7dbe0;
+    --paper: #e9e6df;
+    --moon: #7a1f1f;
+    --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+    --body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --logo: "Ojuju", "Arial Black", Impact, sans-serif;
+    --jp: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--ink); scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--silver);
+    font: 400 1.0625rem/1.65 var(--body);
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--silver); outline-offset: 4px; }
+  .jp { font-family: var(--jp); font-weight: 500; }
+
+  /* halftone: the comic-book grain that runs through the whole site */
+  .halftone {
+    background-image: radial-gradient(rgba(215,219,224,.16) 1px, transparent 1.6px);
+    background-size: 6px 6px;
+  }
+
+  /* ================= splash page ================= */
+  .splash {
+    position: relative;
+    min-height: 100svh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+    padding: calc(env(safe-area-inset-top, 0px) + 1.25rem) 1.25rem 2rem;
+    isolation: isolate;
+  }
+  .splash::before {
+    content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background-image: radial-gradient(rgba(215,219,224,.14) 1px, transparent 1.6px);
+    background-size: 6px 6px;
+    -webkit-mask-image: linear-gradient(160deg, #000 0%, transparent 62%);
+            mask-image: linear-gradient(160deg, #000 0%, transparent 62%);
+  }
+  .splash::after {
+    content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.35) 38%, transparent 60%);
+  }
+  .splash.has-photo { background-size: cover; background-position: center; }
+  .splash.has-photo::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(to top, #000 10%, rgba(0,0,0,.4) 55%, rgba(0,0,0,.6));
+  }
+
+  .top { display: flex; justify-content: space-between; align-items: center; font-size: .9375rem; color: var(--steel); }
+  .top nav { display: flex; gap: 1.25rem; }
+  .top nav a { text-decoration: none; }
+  .top > span { white-space: nowrap; }
+  @media (max-width: 480px) {
+    .top { flex-wrap: wrap; row-gap: .6rem; }
+    .top nav { gap: 1rem; margin-left: auto; }
+  }
+  .top nav a:hover { color: var(--silver); }
+
+
+  .name-wrap { align-self: end; position: relative; z-index: 2; }
+  .top { position: relative; z-index: 2; }
+
+  /* a slow light drifts across the dark */
+  .mind { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  .notes {
+    position: absolute; inset: 0;
+    -webkit-mask-image: radial-gradient(260px circle at var(--x, 70%) var(--y, 40%), rgba(0,0,0,var(--i, 1)) 0%, rgba(0,0,0,.08) 70%, rgba(0,0,0,.04) 100%);
+            mask-image: radial-gradient(260px circle at var(--x, 70%) var(--y, 40%), rgba(0,0,0,var(--i, 1)) 0%, rgba(0,0,0,.08) 70%, rgba(0,0,0,.04) 100%);
+  }
+  .note {
+    position: absolute; white-space: nowrap;
+    color: var(--silver);
+    font-size: .95rem; line-height: 1.3;
+    transform:
+      translate3d(calc(var(--px, 0px) * var(--d, .5)), calc(var(--py, 0px) * var(--d, .5)), 0)
+      rotate(var(--r, 0deg))
+      scale(var(--s, 1));
+    filter: blur(var(--b, 0px));
+    will-change: transform;
+  }
+  .note.serif { font-family: var(--display); font-style: italic; font-size: 1.35rem; }
+  .note.small { font-size: .8rem; color: var(--steel); }
+  .note.struck { text-decoration: line-through; text-decoration-color: #b94a4a; }
+  .note.circled { padding: .1rem .5rem; border: 1px solid var(--steel); border-radius: 50%; }
+  /* depth: a coarser, closer layer of dots sits right under the beam and slides with it */
+  .lit-near {
+    background-image: radial-gradient(rgba(255,120,105,.5) 1.4px, transparent 2.3px) !important;
+    background-size: 11px 11px !important;
+    background-position: var(--npx, 0px) var(--npy, 0px);
+    -webkit-mask-image: radial-gradient(150px circle at var(--x, 70%) var(--y, 40%), #000 0%, rgba(0,0,0,.3) 50%, transparent 80%) !important;
+            mask-image: radial-gradient(150px circle at var(--x, 70%) var(--y, 40%), #000 0%, rgba(0,0,0,.3) 50%, transparent 80%) !important;
+  }
+  /* a mic hanging by its cable, swaying slightly, barely there until the light finds it */
+  .stage {
+    position: absolute; right: 17%; top: 0;
+    height: 42%; width: auto; aspect-ratio: 120 / 470;
+    transform-origin: 50% 0;
+    animation: sway 7s ease-in-out infinite alternate;
+    -webkit-mask-image: radial-gradient(320px circle at var(--x, 70%) var(--y, 40%), #000 0%, rgba(0,0,0,.35) 60%, rgba(0,0,0,.22) 100%);
+            mask-image: radial-gradient(320px circle at var(--x, 70%) var(--y, 40%), #000 0%, rgba(0,0,0,.35) 60%, rgba(0,0,0,.22) 100%);
+  }
+  @keyframes sway { from { transform: rotate(1.6deg); } to { transform: rotate(-1.6deg); } }
+  .stage .rim { opacity: var(--i, 1); }
+  @media (max-width: 599px) {
+    .stage { right: 8%; height: 30%; opacity: .7; }
+  }
+  /* where the light falls, the halftone grain catches it */
+  .lit {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(235,80,70,.55) 1px, transparent 1.7px);
+    opacity: var(--i, 1);
+    background-size: 6px 6px;
+    -webkit-mask-image: radial-gradient(300px circle at var(--x, 70%) var(--y, 40%), #000 0%, rgba(0,0,0,.35) 45%, transparent 75%);
+            mask-image: radial-gradient(300px circle at var(--x, 70%) var(--y, 40%), #000 0%, rgba(0,0,0,.35) 45%, transparent 75%);
+  }
+  .glow {
+    position: absolute; inset: 0; opacity: var(--i, 1);
+    background: radial-gradient(220px circle at var(--x, 70%) var(--y, 40%), rgba(190,34,34,.26), transparent 70%);
+  }
+  .caption {
+    display: inline-block;
+    margin: 0 0 1.1rem;
+    padding: .45rem .8rem .5rem;
+    background: var(--paper);
+    color: #000;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: clamp(1.05rem, 3.4vw, 1.35rem);
+    line-height: 1.2;
+    transform: rotate(-1.5deg);
+    box-shadow: 4px 4px 0 #000, 4px 4px 0 1px var(--gutter);
+    text-decoration: none;
+    transition: transform .2s;
+  }
+  a.caption:hover { transform: rotate(-1.5deg) translateY(-2px); }
+  .caption .dot { display: inline-block; width: .5em; height: .5em; margin-right: .45em; border-radius: 50%; background: #b3261e; vertical-align: .08em; }
+  .name {
+    margin: 0;
+    font-family: var(--logo);
+    font-weight: 800;
+    font-size: clamp(3.75rem, 23vw, 14rem);
+    line-height: .85;
+    letter-spacing: -0.02em;
+    color: var(--silver);
+    background-image:
+      linear-gradient(105deg, transparent 42%, rgba(255,200,150,1) 50%, transparent 58%),
+      radial-gradient(rgba(0,0,0,.32) 1px, transparent 1.7px),
+      linear-gradient(#ece9e2, #ece9e2);
+    background-size: 300% 100%, 5px 5px, 100% 100%;
+    background-position: 130% 0, 0 0, 0 0;
+    background-repeat: no-repeat, repeat, no-repeat;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: sweep 2.6s cubic-bezier(.45,.05,.3,1) .6s 1 both;
+  }
+  @keyframes sweep {
+    from { background-position: 130% 0, 0 0, 0 0; }
+    to   { background-position: -30% 0, 0 0, 0 0; }
+  }
+  .sub { margin: 1.1rem 0 0; color: var(--steel); max-width: 32ch; }
+
+  /* ================= the page: comic panels ================= */
+  main {
+    display: grid;
+    gap: 12px;
+    padding: 12px;
+    background: #000;
+  }
+  .panel {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: #0c0d0f;
+    border: 1px solid var(--gutter);
+    padding: 3.25rem 1.5rem 3rem;
+  }
+  .panel > *:not(.deco) { position: relative; z-index: 1; }
+  .panel { scroll-margin-top: 4.5rem; }
+  .deco { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+
+  /* the mask: printed steel */
+  .manifesto {
+    background:
+      radial-gradient(rgba(215,219,224,.10) 1px, transparent 1.6px) 0 0 / 6px 6px,
+      #0c0d0f;
+  }
+  .manifesto::before {
+    content: ""; position: absolute; inset: 0; z-index: 0;
+    background: linear-gradient(135deg, transparent 20%, #0c0d0f 70%);
+  }
+
+  /* listen: a faint warmth */
+  .listen { background: radial-gradient(90% 60% at 100% 0%, rgba(122,31,31,.16), transparent 70%), #0c0b0c; }
+
+  /* the vault: a brushed steel door */
+  .vault-p {
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px),
+      linear-gradient(160deg, #16191c 0%, #0b0c0e 55%, #121417 100%);
+  }
+  .vault-p::before, .vault-p::after {
+    content: ""; position: absolute; z-index: 0; width: 7px; height: 7px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #5b626b, #1d2024);
+    top: 14px; left: 14px;
+    box-shadow: 0 0 0 1px #000;
+  }
+  .vault-p::after { left: auto; right: 14px; }
+
+  /* contact: a dark room with the red recording light left on */
+  .contact {
+    background:
+      radial-gradient(55% 45% at 100% 100%, rgba(179,38,30,.16), transparent 70%),
+      radial-gradient(rgba(215,219,224,.05) 1px, transparent 1.6px) 0 0 / 6px 6px,
+      linear-gradient(200deg, #101114, #0a0b0d 60%);
+  }
+  .contact::after {
+    content: ""; position: absolute; z-index: 0; right: 22px; bottom: 22px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #b3261e; box-shadow: 0 0 12px rgba(179,38,30,.8);
+  }
+  .drop {
+    position: absolute; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, rgba(255,214,160,.5), rgba(215,219,224,.07) 45%, transparent 70%);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.6);
+  }
+  .panel-head {
+    display: flex; align-items: baseline; gap: .9rem;
+    margin: 0 0 1.75rem;
+  }
+  .panel-head .jp { font-size: 1rem; color: var(--moon); filter: brightness(1.6); }
+  .panel h2 {
+    margin: 0;
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(2.25rem, 8vw, 3.5rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  /* manifesto */
+  .manifesto p {
+    margin: 0 0 1.1rem;
+    max-width: 34ch;
+    font-family: var(--display);
+    font-size: clamp(1.35rem, 4.6vw, 1.85rem);
+    line-height: 1.35;
+    color: var(--silver);
+  }
+  .manifesto p.quiet { font-family: var(--body); font-size: 1.0625rem; line-height: 1.65; color: var(--steel); max-width: 40ch; }
+  .manifesto .sign { margin-top: 2rem; font-style: italic; color: var(--steel); }
+
+  /* listen */
+  .release { display: grid; gap: 1.25rem; }
+  .release-title { margin: 0; font-family: var(--display); font-size: clamp(1.75rem, 6vw, 2.5rem); line-height: 1.1; }
+  .release-meta { margin: .25rem 0 0; color: var(--steel); font-size: .9375rem; }
+  .player iframe { display: block; width: 100%; border: 0; border-radius: 12px; }
+  .listen-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0; padding: 0; list-style: none; }
+  .listen-links a {
+    display: inline-block; padding: .6rem 1rem;
+    border: 1px solid var(--gutter); border-radius: 999px;
+    text-decoration: none; font-size: .9375rem;
+  }
+  .listen-links a:hover { border-color: var(--silver); }
+  .fragments { margin: 2.5rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--gutter); color: var(--steel); max-width: 42ch; }
+  .fragments strong { color: var(--silver); font-weight: 500; }
+
+  /* vault */
+  .vault-note { margin: 0 0 1.75rem; color: var(--steel); max-width: 40ch; }
+  .vault { list-style: none; margin: 0; padding: 0; }
+  .vault li {
+    display: flex; align-items: center; gap: 1rem;
+    padding: .95rem 0; border-bottom: 1px solid var(--gutter);
+  }
+  .vault li:first-child { border-top: 1px solid var(--gutter); }
+  .bar { height: 1.1rem; background: var(--silver); opacity: .88; }
+  .vault .state { margin-left: auto; font-size: .875rem; color: var(--steel); white-space: nowrap; }
+
+  /* contact */
+  .contact-line {
+    margin: 0 0 2.25rem;
+    font-family: var(--display);
+    font-size: clamp(1.5rem, 6.4vw, 2.75rem);
+    line-height: 1.15;
+    word-break: break-word;
+  }
+  .contact-line a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 6px; text-decoration-color: var(--steel); }
+  .contact-line a:hover { text-decoration-color: var(--silver); }
+  .socials { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--gutter); }
+  .socials li { border-bottom: 1px solid var(--gutter); }
+  .socials a {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 1rem 0; text-decoration: none;
+    font-family: var(--display); font-size: 1.5rem;
+  }
+  .socials span { font-family: var(--body); font-size: .875rem; color: var(--steel); }
+  .socials a:hover span { color: var(--silver); }
+
+  footer {
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    padding: 2rem 1.25rem calc(2rem + env(safe-area-inset-bottom, 0px));
+    font-size: .875rem; color: var(--steel);
+  }
+
+  /* margins: fans leave a line */
+  .margins { background: radial-gradient(rgba(215,219,224,.07) 1px, transparent 1.6px) 0 0 / 6px 6px, #0c0d0f; }
+  /* the wall: fan notes kept for good */
+  .wall { margin: 2.5rem 0 0; }
+  .wall-head { margin: 0 0 1rem; font-size: .875rem; color: var(--steel); }
+  .slips {
+    list-style: none; margin: 0; padding: .4rem .2rem 1rem;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.1rem .9rem;
+    max-height: 30rem; overflow-y: auto;
+  }
+  .slip {
+    background: var(--paper); color: #0b0b0b;
+    padding: .75rem .85rem .7rem;
+    box-shadow: 4px 4px 0 #000, 4px 4px 0 1px var(--gutter);
+    transform: rotate(var(--t, -1deg));
+  }
+  .slip p { margin: 0; font-family: var(--display); font-style: italic; font-size: 1.05rem; line-height: 1.3; overflow-wrap: anywhere; }
+  .slip span { display: block; margin-top: .45rem; font-size: .75rem; color: #555; }
+  .vault li.opened { cursor: default; }
+  /* vault samples: a play button, the redacted bar fills red as it plays */
+  .play {
+    flex: none; width: 2.75rem; height: 2.75rem; border-radius: 50%;
+    border: 1px solid var(--gutter); background: transparent; color: var(--silver);
+    display: inline-flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: .7rem; padding: 0;
+    transition: border-color .2s, color .2s;
+  }
+  .play:hover, .play[aria-pressed="true"] { border-color: #b3261e; color: #e0473a; }
+  .vault li.has-sample { cursor: default; }
+  .bar { background: linear-gradient(90deg, #b3261e var(--p, 0%), var(--silver) var(--p, 0%)); }
+  .vault .title { font-family: var(--display); font-size: 1.2rem; }
+  .vault .state a { color: var(--silver); text-underline-offset: 3px; }
+  .margins-note, .hundred-note { margin: 0 0 1.75rem; color: var(--steel); max-width: 40ch; }
+  .hundred-note a { color: var(--silver); text-underline-offset: 3px; text-decoration-color: var(--gutter); }
+  .hundred-note a:hover { text-decoration-color: var(--silver); }
+  .field { display: block; margin: 0 0 1.25rem; }
+  .field span { display: block; margin-bottom: .4rem; font-size: .875rem; color: var(--steel); }
+  .field textarea, .field input {
+    width: 100%; background: transparent; color: var(--silver);
+    border: 0; border-bottom: 1px solid var(--gutter);
+    font: 400 1.25rem/1.4 var(--display); padding: .35rem 0;
+    resize: vertical;
+  }
+  .field textarea { min-height: 4.5rem; }
+  .field textarea:focus, .field input:focus { outline: none; border-bottom-color: var(--silver); }
+  .field input::placeholder, .field textarea::placeholder { color: #7b838c; }
+  .paper-btn {
+    display: inline-block; cursor: pointer; border: 0;
+    padding: .5rem .95rem .55rem;
+    background: var(--paper); color: #000;
+    font: italic 400 1.125rem/1.2 var(--display);
+    transform: rotate(-1deg);
+    box-shadow: 4px 4px 0 #000, 4px 4px 0 1px var(--gutter);
+    transition: transform .15s;
+  }
+  .paper-btn:hover { transform: rotate(-1deg) translateY(-2px); }
+  .paper-btn:disabled { opacity: .6; cursor: wait; }
+  .form-msg { min-height: 1.5rem; margin: 1rem 0 0; font-size: .9375rem; color: var(--steel); }
+  .form-msg.ok { color: var(--silver); }
+  .form-msg.err { color: #c95a52; }
+  .hp { position: absolute; left: -9999px; }
+  .answered { margin: 2.5rem 0 0; padding: 0; list-style: none; border-top: 1px solid var(--gutter); }
+  .answered li { padding: 1.25rem 0; border-bottom: 1px solid var(--gutter); }
+  .answered .q { margin: 0 0 .5rem; color: var(--steel); }
+  .answered .q b { font-weight: 500; color: var(--silver); }
+  .answered .a { margin: 0; font-family: var(--display); font-size: 1.25rem; line-height: 1.35; }
+  .answered .a::before { content: "martael: "; font-family: var(--body); font-size: .875rem; color: var(--steel); }
+
+  /* platform icons (files you add to the folder) */
+  .icon {
+    width: 1.05em; height: 1.05em; object-fit: contain;
+    margin-right: .55em; vertical-align: -0.15em;
+    filter: grayscale(1) brightness(1.8); opacity: .85;
+    transition: opacity .2s;
+  }
+  a:hover .icon { opacity: 1; }
+  .socials a .label { display: inline-flex; align-items: center; }
+
+  /* the handle: same everywhere, so say it once, loudly */
+  .handle-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem 1.1rem; margin: .9rem 0 0; font-size: .9375rem; color: var(--steel); }
+  .handle-row .h { color: var(--silver); font-weight: 500; }
+  .handle-row a { text-decoration: none; display: inline-flex; align-items: center; }
+  .handle-row a:hover { color: var(--silver); }
+  .everywhere { padding: 1.75rem 0 0; border-top: 1px solid var(--gutter); }
+  .big-handle { margin: 0; font-family: var(--logo); font-weight: 800; font-size: clamp(2rem, 7vw, 3.25rem); line-height: 1; letter-spacing: -0.01em; }
+  .big-handle small { display: block; margin-top: .6rem; font-family: var(--body); font-weight: 400; font-size: .9375rem; color: var(--steel); letter-spacing: 0; }
+  .platforms { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.1rem 0 0; padding: 0; }
+  .platforms a {
+    display: inline-flex; align-items: center; padding: .6rem 1rem;
+    border: 1px solid var(--gutter); border-radius: 999px;
+    text-decoration: none; font-size: .9375rem;
+  }
+  .platforms a:hover { border-color: var(--silver); }
+
+  /* the first hundred */
+  .hundred { background: linear-gradient(170deg, #111316, #0b0c0e 60%); }
+  .count { margin: 0 0 .75rem; font-family: var(--logo); font-weight: 800; font-size: clamp(3rem, 10vw, 4.5rem); line-height: .9; }
+  .count small { font-family: var(--body); font-weight: 400; font-size: 1rem; color: var(--steel); }
+  /* the hundred: every spot is a dot. taken = silver, next = red and breathing */
+  .grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; margin: 0 0 1.5rem; max-width: 20rem; padding: 0; list-style: none; }
+  .grid li {
+    aspect-ratio: 1; border-radius: 50%; background: transparent;
+    border: 1px solid var(--gutter);
+    display: grid; place-items: center;
+    font-size: .5rem; line-height: 1; color: transparent; font-variant-numeric: tabular-nums;
+  }
+  .grid li.taken { background: var(--silver); border-color: var(--silver); color: #000; }
+  .grid li.next { border-color: #b3261e; box-shadow: 0 0 10px rgba(179,38,30,.7); animation: breathe 2.4s ease-in-out infinite; }
+  .grid li.you { background: #b3261e; border-color: #b3261e; color: #fff; }
+  @keyframes breathe { 50% { box-shadow: 0 0 2px rgba(179,38,30,.2); } }
+  .spots { margin: 0 0 1.25rem; font-size: .9375rem; color: var(--steel); }
+  .spots b { color: var(--silver); font-weight: 500; }
+  .spots em { font-family: var(--display); color: #e0473a; font-size: 1.05rem; }
+  .you-note { margin: 0 0 1.25rem; padding: .7rem .9rem; border: 1px solid #b3261e; color: var(--silver); font-size: .9375rem; }
+  .you-note b { font-family: var(--logo); font-weight: 800; }
+  .consent { display: flex; gap: .6rem; align-items: flex-start; margin: 0 0 1.25rem; font-size: .875rem; color: var(--steel); line-height: 1.45; }
+  .consent input { margin-top: .2rem; accent-color: #b3261e; flex: none; }
+  .consent a { color: var(--silver); text-underline-offset: 3px; }
+  .fineprint { margin: 1rem 0 0; font-size: .8125rem; color: var(--steel); max-width: 44ch; }
+  .fineprint a { color: var(--silver); text-underline-offset: 3px; }
+  .privacy { max-width: 46ch; padding: 0 1.25rem 2rem; font-size: .875rem; color: var(--steel); }
+  .privacy summary { cursor: pointer; color: var(--steel); }
+  .privacy summary:hover { color: var(--silver); }
+  .privacy p { margin: .75rem 0 0; }
+  @media (min-width: 900px) { .privacy { padding: 0 3rem 2rem; } }
+  .names { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+  .names li { break-inside: avoid; padding: .3rem 0; font-size: .9375rem; }
+  .names li span { color: var(--steel); font-variant-numeric: tabular-nums; margin-right: .5rem; }
+  .names-empty { margin: 0; font-family: var(--display); font-style: italic; font-size: 1.25rem; }
+
+  .letter { margin: 2.25rem 0 0; }
+  .letter p { margin: 0 0 1rem; color: var(--steel); }
+  .letter-row { display: flex; gap: 1rem; align-items: flex-end; flex-wrap: wrap; }
+  .letter-row .field { flex: 1 1 14rem; margin: 0; }
+
+  /* desktop: panels sit side by side like a comic page */
+  @media (min-width: 900px) {
+    .splash { padding: 1.75rem 3rem 3rem; }
+    main { grid-template-columns: repeat(6, 1fr); }
+    .panel { padding: 4rem 3rem; }
+    .manifesto { grid-column: span 4; }
+    .listen    { grid-column: span 2; }
+    .vault-p   { grid-column: span 3; }
+    .margins   { grid-column: span 3; }
+    .hundred   { grid-column: span 2; }
+    .contact   { grid-column: span 4; }
+    footer { padding: 2rem 3rem; }
+  }
+
+  /* ---------- alive layer ---------- */
+
+  /* film grain over everything, like a scanned comic page */
+  .grain {
+    position: fixed; inset: -50%; z-index: 60; pointer-events: none;
+    opacity: .09;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    animation: grain .9s steps(5) infinite;
+  }
+  @media (max-width: 599px) { .grain { animation: none; opacity: .07; } }   /* static grain on phones: cheaper */
+  @keyframes grain {
+    0% { transform: translate(0,0); } 20% { transform: translate(-3%,2%); }
+    40% { transform: translate(2%,-3%); } 60% { transform: translate(-2%,-1%); }
+    80% { transform: translate(3%,3%); } 100% { transform: translate(0,0); }
+  }
+
+
+  /* headlights: the sweep replays now and then, like cars passing */
+  .name { animation: none; background-position: 130% 0, 0 0, 0 0; }
+  .name.sweeping { animation: sweep 2.6s cubic-bezier(.45,.05,.3,1) 1 both; }
+
+  /* live glasgow clock */
+  .clock { color: var(--silver); font-variant-numeric: tabular-nums; }
+  .home { color: inherit; text-decoration: none; transition: color .2s; }
+  .home:hover { color: var(--silver); }
+
+  /* kanji markers reveal their meaning */
+  .mark { position: relative; cursor: help; }
+  .mark::after {
+    content: attr(data-meaning);
+    position: absolute; left: 0; top: calc(100% + .35rem);
+    white-space: nowrap;
+    font-family: var(--body); font-size: .75rem; color: var(--steel);
+    opacity: 0; transform: translateY(-3px);
+    transition: opacity .25s, transform .25s;
+    pointer-events: none;
+  }
+  .mark:hover::after, .mark:focus-visible::after, .panel-head:focus-within .mark::after { opacity: 1; transform: none; }
+  @media (hover: none) { .mark::after { opacity: .7; transform: none; } }
+
+  /* vault: try to read a title and it fights back */
+  .vault li { cursor: not-allowed; }
+  .vault .bar:focus-visible { outline-offset: 2px; }
+  .bar {
+    position: relative; overflow: hidden;
+    display: flex; align-items: center;
+    font: 500 .75rem/1 var(--body); color: #000; letter-spacing: .08em;
+    padding-left: .4rem; white-space: nowrap;
+    transition: opacity .2s;
+  }
+  .vault li:hover .bar, .vault .bar:focus { opacity: 1; }
+  .vault li.denied .state { color: #b94a4a; }
+
+  /* mini bar appears once you scroll past the splash */
+  .minibar {
+    position: fixed; left: 0; right: 0; top: 0; z-index: 40;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: calc(env(safe-area-inset-top, 0px) + .8rem) 1.25rem .8rem;
+    background: rgba(0,0,0,.82);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--gutter);
+    transform: translateY(-100%);
+    transition: transform .35s ease;
+  }
+  .minibar.show { transform: none; }
+  .minibar .mini-name { font-family: var(--logo); font-weight: 800; font-size: 1.35rem; line-height: 1; text-decoration: none; }
+  .minibar nav { display: flex; gap: 1.25rem; font-size: .9375rem; color: var(--steel); }
+  .minibar nav a { text-decoration: none; }
+  .minibar nav a:hover { color: var(--silver); }
+  @media (min-width: 900px) { .minibar { padding-left: 3rem; padding-right: 3rem; } }
+
+  /* vault: after the snippet ends, the countdown becomes a pre-save */
+  .vault li.presave-ready { cursor: default; }
+  .vault .state a.presave-link { color: #e0473a; text-decoration-color: #b3261e; animation: arrive .6s ease both; }
+  .vault .state a.presave-link:hover { color: var(--silver); }
+  @keyframes arrive { from { opacity: 0; transform: translateX(6px); } to { opacity: 1; transform: none; } }
+
+  /* the prologue: a track from before the name */
+  .vault li.prologue { opacity: .62; transition: opacity .25s; }
+  .vault li.prologue:hover, .vault li.prologue:focus-within { opacity: 1; }
+  .vault li.prologue .title { font-style: italic; }
+  .vault li.prologue .state a { color: var(--steel); }
+
+  /* next release: pre-save */
+  .next-up { margin: 2rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; color: var(--steel); font-size: .9375rem; }
+  .next-up em { font-family: var(--display); font-size: 1.2rem; color: var(--silver); }
+  .next-up .paper-btn, .door-presave { text-decoration: none; font-size: 1rem; }
+  .door-presave { margin: 0 0 2.25rem; }
+
+  /* ---------- the door: martael.com/4026 ---------- */
+  .door {
+    position: fixed; inset: 0; z-index: 50;
+    display: flex; overflow-y: auto;
+    padding: calc(env(safe-area-inset-top, 0px) + 2.5rem) 1.5rem calc(env(safe-area-inset-bottom, 0px) + 2.5rem);
+    background:
+      radial-gradient(60% 40% at 50% 30%, rgba(122,31,31,.24), transparent 70%),
+      radial-gradient(rgba(215,219,224,.07) 1px, transparent 1.6px) 0 0 / 6px 6px,
+      #000;
+    opacity: 0; transition: opacity .9s ease;
+  }
+  .door.open { opacity: 1; }
+  .door:focus { outline: none; }
+  .door-inner { width: 100%; max-width: 34rem; margin: auto; }   /* margin:auto centres it without clipping the top on short screens */
+  .door .gate-k { margin: 0 0 1.75rem; font-family: var(--jp); font-size: 1rem; color: var(--moon); filter: brightness(1.6); }
+  .letter-body p {
+    margin: 0 0 1rem; min-height: 1.4em;
+    font-family: var(--display); font-size: clamp(1.25rem, 4.4vw, 1.7rem); line-height: 1.4; color: var(--silver);
+  }
+  .letter-body p:first-child, .letter-body p:last-child { font-style: italic; }
+  .letter-body p:last-child { color: var(--steel); }
+  .letter-body .cursor::after { content: "\258D"; margin-left: .08em; color: #b3261e; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .door-after { opacity: 0; transform: translateY(8px); transition: opacity .7s, transform .7s; }
+  .door-after.show { opacity: 1; transform: none; }
+  .door-listen { display: flex; align-items: center; gap: .8rem; margin: 2.25rem 0 2rem; font-size: .9375rem; color: var(--steel); }
+  .door-sign { display: flex; gap: 1rem; align-items: flex-end; flex-wrap: wrap; }
+  .door-sign .field { flex: 1 1 12rem; margin: 0; }
+  .door-leave {
+    display: inline-block; margin-top: 2.25rem; padding: 0; border: 0; background: none; cursor: pointer;
+    font: inherit; font-size: .9375rem; color: var(--steel);
+    text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--gutter);
+  }
+  .door-leave:hover { color: var(--silver); }
+  body.door-locked { overflow: hidden; }
+  .names .gate { margin-left: .45rem; font-style: normal; font-family: var(--jp); font-size: .8rem; color: var(--moon); filter: brightness(1.6); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .door, .door-after { transition: none; }
+    .vault .state a.presave-link { animation: none; }
+    html { scroll-behavior: auto; }
+    .grain, .stage { animation: none; }
+    .name, .name.sweeping { animation: none; background-position: -30% 0, 0 0, 0 0; }
+    .minibar { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<div class="minibar" id="minibar">
+  <a class="mini-name" href="#top">martael</a>
+  <nav aria-label="Sections">
+    <a href="#listen">listen</a>
+    <a href="#vault">vault</a>
+    <a href="#margins">margins</a>
+    <a href="#contact">contact</a>
+  </nav>
+</div>
+
+<header class="splash" id="top">
+  <div class="mind" aria-hidden="true">
+    <div class="lit"></div>
+    <div class="lit lit-near"></div>
+    <svg class="stage" viewBox="0 0 120 470" preserveAspectRatio="xMidYMin meet" aria-hidden="true">
+      <defs>
+        <pattern id="grille" width="3.2" height="3.2" patternUnits="userSpaceOnUse">
+          <circle cx="1.6" cy="1.6" r=".75" fill="#3a3e46"/>
+        </pattern>
+      </defs>
+      <!-- a mic left hanging by its cable, nobody at it -->
+      <path d="M60 0 C61 110 58 220 60 286" fill="none" stroke="#121317" stroke-width="2.2"/>
+      <path d="M60 0 C61 110 58 220 60 286" fill="none" stroke="#e0473a" stroke-opacity=".35" stroke-width=".6" class="rim"/>
+      <rect x="55" y="284" width="10" height="10" rx="2" fill="#17181c"/>
+      <path d="M54 294 L51 364 Q51 370 57 370 L63 370 Q69 370 69 364 L66 294 Z" fill="#101114"/>
+      <path d="M54 294 L51 364" stroke="#e0473a" stroke-opacity=".6" stroke-width="1.1" class="rim"/>
+      <rect x="50" y="368" width="20" height="8" rx="2" fill="#17181c"/>
+      <circle cx="60" cy="396" r="21" fill="#15171b"/>
+      <circle cx="60" cy="396" r="21" fill="url(#grille)"/>
+      <path d="M40 402 A21 21 0 0 0 52 416" fill="none" stroke="#e0473a" stroke-opacity=".75" stroke-width="1.3" class="rim"/>
+    </svg>
+    <div class="notes" id="notes"></div>
+    <div class="glow"></div>
+  </div>
+    
+  <div class="top">
+    <span><a class="home" href="/">martael's world</a> <time class="clock" id="clock"></time></span>
+    <nav aria-label="Sections">
+      <a href="#listen">listen</a>
+      <a href="#vault">vault</a>
+      <a href="#margins">margins</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+
+  <div></div>
+
+  <div class="name-wrap">
+    <a class="caption" id="now" href="#listen"></a>
+    <h1 class="name">martael</h1>
+    <p class="sub">a necessary persona.</p>
+    <p class="handle-row" id="handle-row"><span class="h">@onlymartael</span><a href="https://www.tiktok.com/@onlymartael" target="_blank" rel="noopener">tiktok</a><a href="https://www.instagram.com/onlymartael/" target="_blank" rel="noopener">instagram</a><a href="https://www.youtube.com/@onlymartael" target="_blank" rel="noopener">youtube</a></p>
+  </div>
+</header>
+
+<main>
+
+  <section class="panel manifesto" aria-labelledby="mask-h">
+    <div class="panel-head">
+      <span class="jp mark" lang="ja" data-meaning="kamen, mask" tabindex="0" role="img" aria-label="kamen, mask">仮面</span>
+      <h2 id="mask-h">the mask</h2>
+    </div>
+    <p>the mask gives the freedom to express.</p>
+    <p>to you, building back up behind closed doors whilst the world sleeps.</p>
+    <p class="quiet">a purpose.</p>
+    <p class="sign">— martael</p>
+  </section>
+
+  <section class="panel listen" id="listen" aria-labelledby="listen-h">
+    <div class="panel-head">
+      <span class="jp mark" lang="ja" data-meaning="kiku, listen" tabindex="0" role="img" aria-label="kiku, listen">聴く</span>
+      <h2 id="listen-h">listen</h2>
+    </div>
+    <div class="release">
+      <div>
+        <p class="release-title" id="release-title">infinite tsukuyomi</p>
+        <p class="release-meta" id="release-meta">out now</p>
+      </div>
+      <div class="player" id="player" hidden></div>
+      <ul class="listen-links" id="listen-links"><li><a href="https://open.spotify.com/track/5T8sEGkOIxPmQPHg7psTeu" target="_blank" rel="noopener">spotify</a></li><li><a href="https://music.apple.com/gb/album/infinite-tsukuyomi/1883569006?i=1883569007" target="_blank" rel="noopener">apple music</a></li><li><a href="https://song.link/s/5T8sEGkOIxPmQPHg7psTeu" target="_blank" rel="noopener">all platforms</a></li></ul>
+    </div>
+    <p class="next-up" id="next-up" hidden></p>
+    <p class="fragments"><strong>(fragment)</strong> short songs with no chorus, written in the moment. you'll see it.</p>
+  </section>
+
+  <section class="panel vault-p" id="vault" aria-labelledby="vault-h">
+    <div class="panel-head">
+      <span class="jp mark" lang="ja" data-meaning="kura, storehouse" tabindex="0" role="img" aria-label="kura, storehouse">蔵</span>
+      <h2 id="vault-h">the vault</h2>
+    </div>
+    <p class="vault-note">under review.</p>
+    <ul class="vault" id="vault-list" aria-label="Unreleased tracks, titles hidden"></ul>
+  </section>
+
+  <section class="panel margins" id="margins" aria-labelledby="margins-h">
+    <div class="panel-head">
+      <span class="jp mark" lang="ja" data-meaning="yohaku, margin" tabindex="0" role="img" aria-label="yohaku, margin">余白</span>
+      <h2 id="margins-h">the margins</h2>
+    </div>
+    <p class="margins-note">leave a greeting. a thought, a resonating lyric, a question. some stay on this page, forever. sign it with your email and you're in line for <a href="#hundred">the first hundred</a>.</p>
+    <form name="margins" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="margins-form">
+      <input type="hidden" name="form-name" value="margins">
+      <input type="hidden" name="via" value="">
+      <p class="hp"><label>leave this empty <input name="bot-field"></label></p>
+      <label class="field"><span>your line</span><textarea name="note" required maxlength="140" placeholder="keep it short, like a margin note"></textarea></label>
+      <label class="field"><span id="alias-label">your alias, this is what's remembered</span><input name="name" id="alias" maxlength="60" required autocomplete="nickname" placeholder="a name or alias"></label>
+      <label class="field"><span>your email, never shown, only to reach you</span><input type="email" name="email" required autocomplete="email" placeholder="you@somewhere.com"></label>
+      <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>i'm happy for martael to keep my email to contact me about this, and to show my alias and line if they're kept. <a href="#privacy" data-open-privacy>privacy</a></span></label>
+      <button class="paper-btn" type="submit">leave it</button>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+    <div class="wall" id="wall" hidden>
+      <p class="wall-head">left in the margins</p>
+      <ul class="slips" id="slips"></ul>
+    </div>
+    <ul class="answered" id="answered" hidden></ul>
+  </section>
+
+  <section class="panel hundred" id="hundred" aria-labelledby="hundred-h">
+    <div class="panel-head">
+      <span class="jp mark" lang="ja" data-meaning="hyaku, hundred" tabindex="0" role="img" aria-label="hyaku, hundred">百</span>
+      <h2 id="hundred-h">the first hundred</h2>
+    </div>
+    <p class="count" id="count">0 <small>of 100</small></p>
+    <ul class="grid" id="grid" aria-hidden="true"></ul>
+    <p class="spots" id="spots"></p>
+    <p class="you-note" id="you-note" hidden></p>
+    <p class="hundred-note">the first hundred people here before anyone else, remembered for good. numbers go in the order your note arrives, with a real email. <a href="#margins">leave your line in the margins</a> to claim yours.</p>
+    <ol class="names" id="names"></ol>
+  </section>
+
+  <section class="panel contact" id="contact" aria-labelledby="contact-h">
+    <div class="panel-head">
+      <span class="jp mark" lang="ja" data-meaning="renraku, contact" tabindex="0" role="img" aria-label="renraku, contact">連絡</span>
+      <h2 id="contact-h">contact</h2>
+    </div>
+    <p class="contact-line"><a href="mailto:contact@martael.com">contact@martael.com</a></p>
+    <div class="everywhere">
+      <p class="big-handle" id="big-handle">@onlymartael<small>the same everywhere</small></p>
+      <ul class="platforms" id="socials"><li><a href="https://open.spotify.com/artist/6u88p05K7XgZTTlGvm7OS6" target="_blank" rel="noopener">spotify</a></li><li><a href="https://music.apple.com/gb/artist/martael/1883549379" target="_blank" rel="noopener">apple music</a></li><li><a href="https://soundcloud.com/martael" target="_blank" rel="noopener">soundcloud</a></li><li><a href="https://www.tiktok.com/@onlymartael" target="_blank" rel="noopener">tiktok</a></li><li><a href="https://www.instagram.com/onlymartael/" target="_blank" rel="noopener">instagram</a></li><li><a href="https://www.youtube.com/@onlymartael" target="_blank" rel="noopener">youtube</a></li></ul>
+    </div>
+    <form class="letter" name="letter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="letter-form">
+      <input type="hidden" name="form-name" value="letter">
+      <p class="hp"><label>leave this empty <input name="bot-field"></label></p>
+      <p>your letter. one email when something drops, personally.</p>
+      <div class="letter-row">
+        <label class="field"><span>email</span><input type="email" name="email" required autocomplete="email" placeholder="you@somewhere.com"></label>
+        <button class="paper-btn" type="submit">get the letter</button>
+      </div>
+      <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>just the letter, nothing else. unsubscribe any time by replying. <a href="#privacy" data-open-privacy>privacy</a></span></label>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <span>© <span id="year"></span> martael</span>
+  <span>a necessary persona</span>
+  <a class="home" href="#top">back to top ↑</a>
+</footer>
+<details class="privacy" id="privacy">
+  <summary>privacy</summary>
+  <p>what's collected: your email, and an alias and line if you leave one in the margins. the email is used only to send you the letter or to reach you about the first hundred. it is never shown on this site and never shared or sold.</p>
+  <p>your alias and line are only shown publicly if they're kept on the wall or the first hundred, and the first hundred is permanent by design. want anything removed or your email deleted? write to <a href="mailto:contact@martael.com">contact@martael.com</a>.</p>
+</details>
+
+<script>
+/* =====================================================
+   NOTE: the release title, listen links and socials are ALSO written into the
+   HTML above (for Google and anyone without JavaScript). If you change them
+   here, change them there too so both match.
+   =====================================================
+   EDIT HERE — everything you'll want to change lives in CONFIG.
+   Leave a value as "" and it won't show.
+   ===================================================== */
+const CONFIG = {
+  // Mask photo: put the file in this folder and write its name, e.g. "mask.jpg"
+  photo: "",
+
+  // The little box above your name. Leave text "" and it writes itself from "next" below
+  // ("to you, 4026 · 23 oct", then "to you, 4026 · out now" from release day on).
+  now: { text: "", link: "#listen" },
+
+  // What's OUT NOW. Shown under "listen" with the player and the buttons.
+  // spotifyTrackId: from open.spotify.com/track/THIS_PART?si=...
+  release: {
+    title: "infinite tsukuyomi",
+    meta: "out now",
+    spotifyTrackId: "5T8sEGkOIxPmQPHg7psTeu",
+    listen: [
+      { name: "spotify",      url: "https://open.spotify.com/track/5T8sEGkOIxPmQPHg7psTeu" },
+      { name: "apple music",  url: "https://music.apple.com/gb/album/infinite-tsukuyomi/1883569006?i=1883569007" },
+      { name: "all platforms", url: "https://song.link/s/5T8sEGkOIxPmQPHg7psTeu" }
+    ]
+  },
+
+  // Icons: put each platform's official logo file in this folder (e.g. "spotify.svg")
+  // and add icon: "spotify.svg" to its line. No icon listed = text only.
+
+  // How many unreleased tracks sit redacted in the vault (titles never shown)
+  vaultCount: 6,                // counts the bar for the next release too; drops by 1 by itself on release day
+
+  // Vault tracks you've released: they leave the redacted list and show here, newest first.
+  // Example: { title: "spirited away", url: "https://open.spotify.com/track/...", sample: "spirited.mp3" },
+  // (when you add one, lower vaultCount by 1)
+  opened: [],
+
+  // The prologue: sits at the bottom of the vault, after the redacted bars.
+  prologue: { title: "infinite tsukuyomi", label: "before the mask", url: "https://open.spotify.com/track/5T8sEGkOIxPmQPHg7psTeu" },
+
+  // Playable samples on the redacted bars, in order from the top bar down.
+  // Put the audio file in this folder, e.g. ["tease.mp3"] plays on the first bar. "" = no sample on that bar.
+  vaultSamples: ["/tease.mp3"],
+
+  // The wall: margin notes you choose to keep on the site forever, newest at the bottom.
+  // Example: { note: "found you at 3am. staying.", name: "k" },
+  wall: [
+  { note: "I’d like to believe it’ll all go my way in the end.", name: "prx-cb" },
+  { note: "i was here first", name: "someone" },
+],
+  // The first hundred: add names as people back you, newest at the bottom.
+  firstHundred:["prx-cb", "someone"],
+
+  // Margin notes you've answered publicly (optional). Example:
+  // { from: "k", note: "what's infinite tsukuyomi about?", reply: "a dream you'd rather stay in." },
+  answered: [],
+
+  // THE DOOR: martael.com/4026 opens this letter. It exists nowhere else on the site.
+  // One line per entry. Rewrite it in your own words. Empty letter = door stays shut.
+  door: {
+    letter: [
+      "to you,",
+      "if you're reading this, you came looking. most people don't.",
+      "this one was made behind closed doors, whilst the world slept.",
+      "it isn't yours yet. on the 23rd it is.",
+      "— martael"
+    ],
+    letterOut: [
+      "to you,",
+      "you found the door before it opened. thank you for that.",
+      "it's yours now.",
+      "— martael"
+    ],
+    // a door-only clip: add /door.mp3 to the site (NOT the public vault tease). if the file isn't there, the player just doesn't show.
+    sample: "/door.mp3",
+    found: []               // aliases who signed at the door get a 門 next to their name on the first hundred
+  },
+
+  // NEXT RELEASE. Nothing else to edit on release day: at midnight (Glasgow time) on `date`
+  // the site switches itself. The track takes over "listen" and leaves the vault, the countdown and
+  // pre-save disappear, the door letter swaps to `door.letterOut`.
+  // Before then, fill in spotifyTrackId + listen so the buttons are ready when it flips.
+  next: {
+    title: "to you, 4026",
+    date: "2026-10-23",                                   // YYYY-MM-DD
+    presave: "https://distrokid.com/hyperfollow/martael/to-you-4026-2",
+    spotifyTrackId: "",                                   // paste the track ID before release day
+    listen: []                                            // e.g. { name: "spotify", url: "..." }
+  },
+
+  // Your handle, the same on every platform
+  handle: "@onlymartael",
+
+  // stream: true = a place to listen (contact list only). the rest also show under the name up top.
+  socials: [
+    { name: "spotify",     url: "https://open.spotify.com/artist/6u88p05K7XgZTTlGvm7OS6", stream: true },
+    { name: "apple music", url: "https://music.apple.com/gb/artist/martael/1883549379", stream: true },
+    { name: "soundcloud",  url: "https://soundcloud.com/martael", stream: true },
+    { name: "tiktok",    url: "https://www.tiktok.com/@onlymartael" },
+    { name: "instagram", url: "https://www.instagram.com/onlymartael/" },
+    { name: "youtube",   url: "https://www.youtube.com/@onlymartael" }
+  ]
+};
+/* ===================================================== */
+
+const el = (tag, props = {}, text) => {
+  const n = Object.assign(document.createElement(tag), props);
+  if (text) n.textContent = text;
+  return n;
+};
+
+// ---- release state: derived from CONFIG.next.date, so release day needs no edits
+const MONTHS = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+const prettyDate = iso => { const [, m, d] = iso.split("-").map(Number); return d + " " + MONTHS[m - 1]; };
+// midnight at the start of `iso` in Glasgow/London time, as a timestamp (handles BST/GMT)
+const londonMidnight = iso => {
+  const guess = Date.parse(iso + "T00:00:00Z");
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", hourCycle: "h23",
+    year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric" })
+    .formatToParts(new Date(guess)).map(p => [p.type, +p.value]));
+  const asLondon = Date.UTC(parts.year, parts.month - 1, parts.day, parts.hour, parts.minute);
+  return guess - (asLondon - guess);
+};
+const NEXT = CONFIG.next || {};
+const nextAt = NEXT.date ? londonMidnight(NEXT.date) : Infinity;
+const isOut = !!NEXT.title && Date.now() >= nextAt;
+const REL = isOut ? { title: NEXT.title, meta: "out now", spotifyTrackId: NEXT.spotifyTrackId, listen: NEXT.listen || [] } : CONFIG.release;
+const NX = (!isOut && NEXT.presave) ? NEXT : {};            // pre-save only exists before release day
+
+document.getElementById("release-title").textContent = REL.title;
+document.getElementById("release-meta").textContent = REL.meta || "";
+
+// now box
+const nowEl = document.getElementById("now");
+const nowText = (CONFIG.now && CONFIG.now.text) || (NEXT.title ? NEXT.title + " · " + (isOut ? "out now" : (NEXT.date ? prettyDate(NEXT.date) : "soon")) : "");
+if (nowText) {
+  nowEl.appendChild(el("span", { className: "dot" }));
+  nowEl.appendChild(document.createTextNode(nowText));
+  nowEl.href = (CONFIG.now && CONFIG.now.link) || "#listen";
+  if (/^https?:/.test(nowEl.href) && !nowEl.href.startsWith(location.origin)) { nowEl.target = "_blank"; nowEl.rel = "noopener"; }
+} else {
+  nowEl.remove();
+}
+
+// listen buttons
+const ll = document.getElementById("listen-links");
+ll.textContent = "";
+REL.listen.filter(l => l.url).forEach(l => {
+  const li = el("li");
+  const a = el("a", { href: l.url, target: "_blank", rel: "noopener" });
+  if (l.icon) a.appendChild(el("img", { className: "icon", src: l.icon, alt: "" }));
+  a.appendChild(document.createTextNode(l.name));
+  li.appendChild(a);
+  ll.appendChild(li);
+});
+
+// spotify player
+if (REL.spotifyTrackId) {
+  const p = document.getElementById("player");
+  p.innerHTML = '<iframe title="Listen to martael on Spotify" src="https://open.spotify.com/embed/track/' +
+    encodeURIComponent(REL.spotifyTrackId) +
+    '?theme=0" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>';
+  p.hidden = false;
+}
+
+// next release: pre-save line under listen
+if (NX.presave) {
+  const nu = document.getElementById("next-up");
+  nu.appendChild(document.createTextNode("next: "));
+  nu.appendChild(el("em", {}, NX.title || "soon"));
+  if (NEXT.date) nu.appendChild(document.createTextNode(prettyDate(NEXT.date)));
+  nu.appendChild(el("a", { className: "paper-btn", href: NX.presave, target: "_blank", rel: "noopener" }, "pre-save"));
+  nu.hidden = false;
+}
+
+// vault audio: one sample plays at a time
+let nowPlaying = null;
+const addPlayer = (li, src, bar, label, onEnd, onMissing) => {
+  const audio = new Audio(); audio.preload = "none"; audio.src = src;
+  const btn = el("button", { className: "play", type: "button" }, "▶");
+  btn.setAttribute("aria-label", "Play sample of " + label);
+  btn.setAttribute("aria-pressed", "false");
+  const stop = () => { audio.pause(); btn.textContent = "▶"; btn.setAttribute("aria-pressed", "false"); };
+  btn.addEventListener("click", e => {
+    e.stopPropagation();
+    if (audio.paused) {
+      if (nowPlaying && nowPlaying !== stop) nowPlaying();
+      audio.play().catch(() => {}); btn.textContent = "❚❚"; btn.setAttribute("aria-pressed", "true"); nowPlaying = stop;
+    } else stop();
+  });
+  audio.addEventListener("timeupdate", () => {
+    if (bar && audio.duration) bar.style.setProperty("--p", (audio.currentTime / audio.duration * 100).toFixed(1) + "%");
+  });
+  audio.addEventListener("ended", () => {
+    stop();
+    if (onEnd) { if (bar) bar.style.setProperty("--p", "100%"); onEnd(); }   // heard it: bar stays red
+    else if (bar) bar.style.setProperty("--p", "0%");
+  });
+  li.classList.add("has-sample");
+  li.insertBefore(btn, li.firstChild);
+  // no dead buttons: if the file isn't on the site (or isn't audio), take the player away again
+  fetch(src, { method: "HEAD" }).then(r => {
+    if (!r.ok || !/audio|octet-stream/.test(r.headers.get("content-type") || "")) throw 0;
+  }).catch(() => { btn.remove(); li.classList.remove("has-sample"); if (onMissing) onMissing(); });
+};
+
+// vault: opened tracks first, then redacted bars (widths fixed so they don't jump between visits)
+const widths = [62, 44, 71, 38, 55, 67, 49, 58, 41, 64];
+const vl = document.getElementById("vault-list");
+const openedList = (isOut ? [{ title: NEXT.title, url: (NEXT.listen || [])[0] && NEXT.listen[0].url, sample: (CONFIG.vaultSamples || [])[0] }] : []).concat(CONFIG.opened || []);
+const vaultCount = Math.max(0, CONFIG.vaultCount - (isOut ? 1 : 0));
+const vaultSamples = isOut ? (CONFIG.vaultSamples || []).slice(1) : (CONFIG.vaultSamples || []);
+openedList.forEach(t => {
+  const li = el("li", { className: "opened" });
+  li.appendChild(el("span", { className: "title" }, t.title));
+  const st = el("span", { className: "state" });
+  if (t.url) st.appendChild(el("a", { href: t.url, target: "_blank", rel: "noopener" }, "out now"));
+  else st.textContent = "out now";
+  li.appendChild(st);
+  if (t.sample) addPlayer(li, t.sample, null, t.title);
+  vl.appendChild(li);
+});
+// when the top sample finishes, its countdown turns into a pre-save link
+const offerPresave = li => {
+  if (li.dataset.open) return;
+  li.dataset.open = "1";                       // stops the scramble so the link can be tapped
+  li.classList.add("presave-ready");
+  li.classList.remove("denied");
+  const st = li.querySelector(".state");
+  st.textContent = "";
+  st.appendChild(el("a", { className: "presave-link", href: NX.presave, target: "_blank", rel: "noopener" }, "pre-save"));
+};
+const countdown = () => {
+  if (isOut || !isFinite(nextAt)) return "";
+  const days = Math.ceil((nextAt - Date.now()) / 86400000);
+  if (days > 1) return "opens in " + days + " days";
+  if (days === 1) return "opens tomorrow";
+  if (days === 0) return "opens today";
+  return "any moment now";
+};
+for (let i = 0; i < vaultCount; i++) {
+  const li = el("li");
+  const bar = el("span", { className: "bar", tabIndex: 0 });
+  bar.setAttribute("role", "img");
+  bar.setAttribute("aria-label", "Unreleased track, title hidden");
+  bar.style.width = widths[i % widths.length] + "%";
+  li.appendChild(bar);
+  const label = (i === 0 && countdown()) || "unreleased";
+  li.dataset.state = label;
+  li.appendChild(el("span", { className: "state" }, label));
+  li.addEventListener("mouseenter", () => scramble(li));
+  bar.addEventListener("focus", () => scramble(li));
+  const smp = vaultSamples[i];
+  if (smp) addPlayer(li, smp, bar, "an unreleased track", (i === 0 && NX.presave) ? () => offerPresave(li) : null);
+  vl.appendChild(li);
+}
+const PR = CONFIG.prologue;
+if (PR && PR.title) {
+  const li = el("li", { className: "opened prologue" });
+  li.appendChild(el("span", { className: "title" }, PR.title));
+  const st = el("span", { className: "state" });
+  if (PR.url) st.appendChild(el("a", { href: PR.url, target: "_blank", rel: "noopener" }, PR.label || "out now"));
+  else st.textContent = PR.label || "";
+  li.appendChild(st);
+  vl.appendChild(li);
+}
+
+// the wall: kept margin notes
+if ((CONFIG.wall || []).length) {
+  const slips = document.getElementById("slips");
+  const tilts = [-1.8, 1.2, -0.6, 2, -1.2, 0.8, -2.2, 1.5];
+  CONFIG.wall.forEach((w, k) => {
+    const li = el("li", { className: "slip" });
+    li.style.setProperty("--t", tilts[k % tilts.length] + "deg");
+    li.appendChild(el("p", {}, w.note));
+    li.appendChild(el("span", {}, "— " + (w.name || "someone")));
+    slips.appendChild(li);
+  });
+  document.getElementById("wall").hidden = false;
+}
+
+// the first hundred: a grid of 100 spots, taken ones filled, the next one breathing
+const names = CONFIG.firstHundred.slice(0, 100);
+const pad3 = n => String(n).padStart(3, "0");
+const full = names.length >= 100;
+document.getElementById("count").innerHTML = names.length + " <small>of 100</small>";
+const gridEl = document.getElementById("grid");
+for (let i = 0; i < 100; i++) {
+  const li = el("li", { className: i < names.length ? "taken" : (i === names.length ? "next" : "") });
+  if (i < names.length) li.title = pad3(i + 1) + " " + names[i];
+  gridEl.appendChild(li);
+}
+const spotsEl = document.getElementById("spots");
+if (full) {
+  spotsEl.textContent = "the hundred is full. these names are permanent.";
+} else {
+  spotsEl.innerHTML = "<b>" + (100 - names.length) + "</b> spots left. next up: <em>#" + pad3(names.length + 1) + "</em>";
+}
+// the margins form: once the hundred is full, an alias is no longer needed to sign
+if (full) {
+  const al = document.getElementById("alias");
+  al.required = false; al.placeholder = "a name, or nothing";
+  document.getElementById("alias-label").textContent = "sign it (optional)";
+}
+const namesEl = document.getElementById("names");
+if (names.length) {
+  names.forEach((n, i) => {
+    const li = el("li");
+    li.appendChild(el("span", {}, pad3(i + 1)));
+    li.appendChild(document.createTextNode(n));
+    if (((CONFIG.door || {}).found || []).includes(n)) li.appendChild(el("i", { className: "gate", title: "found the door" }, "門"));
+    namesEl.appendChild(li);
+  });
+} else {
+  namesEl.replaceWith(el("p", { className: "names-empty" }, "no names yet. number one is still open."));
+}
+// remember (on this device only) who signed, so they can see where they stand
+const store = {
+  get() { try { return localStorage.getItem("martael-alias") || ""; } catch { return ""; } },
+  set(v) { try { localStorage.setItem("martael-alias", v); } catch {} }
+};
+const showYou = () => {
+  const me = store.get(); if (!me) return;
+  const box = document.getElementById("you-note");
+  const idx = names.findIndex(n => n.toLowerCase() === me.toLowerCase());
+  box.textContent = "";
+  if (idx > -1) {
+    gridEl.children[idx].classList.add("you");
+    box.appendChild(document.createTextNode("you're "));
+    box.appendChild(el("b", {}, "#" + pad3(idx + 1)));
+    box.appendChild(document.createTextNode(", " + names[idx] + ". remembered."));
+  } else {
+    box.appendChild(document.createTextNode("you signed as "));
+    box.appendChild(el("b", {}, me));
+    box.appendChild(document.createTextNode(". your number is confirmed once your note is read, in the order it arrived."));
+  }
+  box.hidden = false;
+};
+showYou();
+
+// answered margin notes
+if (CONFIG.answered.length) {
+  const ans = document.getElementById("answered");
+  CONFIG.answered.forEach(x => {
+    const li = el("li");
+    const q = el("p", { className: "q" });
+    q.appendChild(el("b", {}, x.from || "someone"));
+    q.appendChild(document.createTextNode(": " + x.note));
+    li.appendChild(q);
+    li.appendChild(el("p", { className: "a" }, x.reply));
+    ans.appendChild(li);
+  });
+  ans.hidden = false;
+}
+
+// forms: sent quietly to Netlify, no page reload
+const wire = (id, okText, onOk) => {
+  const f = document.getElementById(id);
+  const msg = f.querySelector(".form-msg");
+  const btn = f.querySelector("button");
+  f.addEventListener("submit", async e => {
+    e.preventDefault();
+    btn.disabled = true; msg.className = "form-msg"; msg.textContent = "sending...";
+    try {
+      const r = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(f)).toString()
+      });
+      if (!r.ok) throw new Error();
+      const sent = new FormData(f);
+      f.reset(); msg.className = "form-msg ok"; msg.textContent = okText;
+      if (onOk) onOk(sent);
+    } catch {
+      msg.className = "form-msg err";
+      msg.textContent = "that didn't go through. try again, or email contact@martael.com.";
+    }
+    btn.disabled = false;
+  });
+};
+wire("margins-form", "it's in the margins. you're in line for the first hundred: numbers go in the order notes arrive.", fd => {
+  const alias = (fd.get("name") || "").trim();
+  if (alias) { store.set(alias); showYou(); }
+});
+wire("letter-form", "you're on the list. first letter comes with the next drop.");
+
+// socials: one handle, every platform
+const socialLinks = CONFIG.socials.filter(x => x.url);
+const makeLink = x => {
+  const a = el("a", { href: x.url, target: "_blank", rel: "noopener" });
+  if (x.icon) a.appendChild(el("img", { className: "icon", src: x.icon, alt: "" }));
+  a.appendChild(document.createTextNode(x.name));
+  return a;
+};
+const bh = document.getElementById("big-handle");
+bh.textContent = CONFIG.handle;  // replaces the static fallback
+bh.appendChild(el("small", {}, "the same everywhere"));
+const so = document.getElementById("socials");
+so.textContent = "";
+socialLinks.forEach(x => { const li = el("li"); li.appendChild(makeLink(x)); so.appendChild(li); });
+const hr = document.getElementById("handle-row");
+hr.textContent = "";
+hr.appendChild(el("span", { className: "h" }, CONFIG.handle));
+socialLinks.filter(x => !x.stream).forEach(x => hr.appendChild(makeLink(x)));   // up top: social only; streaming links live in contact
+
+// photo
+if (CONFIG.photo) {
+  const s = document.getElementById("top");
+  s.classList.add("has-photo");
+  s.style.backgroundImage = 'url("' + CONFIG.photo + '")';
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// privacy links open the details block they point at
+const privacyEl = document.getElementById("privacy");
+document.querySelectorAll("[data-open-privacy]").forEach(a => a.addEventListener("click", () => { privacyEl.open = true; }));
+
+const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// vault scramble: glyphs flicker across the bar, then "access denied"
+function scramble(li) {
+  if (li.dataset.busy || li.dataset.open) return;
+  li.dataset.busy = "1";
+  const bar = li.querySelector(".bar");
+  const state = li.querySelector(".state");
+  const glyphs = "アカサタナハマヤラワ仮面蔵月01#%▓▒░";
+  const len = Math.max(6, Math.round(bar.offsetWidth / 9));
+  const finish = () => {
+    bar.textContent = "";
+    if (li.dataset.open) { delete li.dataset.busy; return; }   // pre-save arrived mid-scramble: leave it alone
+    state.textContent = "access denied";
+    li.classList.add("denied");
+    setTimeout(() => {
+      li.classList.remove("denied");
+      delete li.dataset.busy;
+      if (li.dataset.open) return;
+      state.textContent = li.dataset.state || "unreleased";
+      delete li.dataset.busy;
+    }, 1400);
+  };
+  if (calm) return finish();
+  let ticks = 0;
+  const t = setInterval(() => {
+    let out = "";
+    for (let i = 0; i < len; i++) out += glyphs[Math.floor(Math.random() * glyphs.length)];
+    bar.textContent = out;
+    if (++ticks > 9) { clearInterval(t); finish(); }
+  }, 55);
+}
+
+// live clock, always glasgow time
+const clock = document.getElementById("clock");
+const tick = () => {
+  clock.textContent = new Intl.DateTimeFormat("en-GB", {
+    hour: "2-digit", minute: "2-digit", timeZone: "Europe/London"
+  }).format(new Date());
+};
+tick(); setInterval(tick, 15000);
+
+// headlights: first pass on load, then a car goes by every 14-28 seconds (only while the splash is on screen)
+const nameEl = document.querySelector(".name");
+let splashOn = true;                     // set by the observer further down
+let wake = () => {};                     // restarts the light loop; defined with it
+const pass = () => {
+  nameEl.classList.remove("sweeping");
+  void nameEl.offsetWidth;
+  nameEl.classList.add("sweeping");
+};
+if (!calm) {
+  setTimeout(pass, 600);
+  const loop = () => setTimeout(() => { if (!document.hidden && splashOn) pass(); loop(); }, 14000 + Math.random() * 14000);
+  loop();
+}
+
+// the mind: notes only readable where the light falls
+const NOTES = [
+  ["alter ego", 6, 12, -3, ""],
+  ["you want what you create to live", 32, 8, 2, "small"],
+  ["take 23", 66, 11, 2, "small"],
+  ["i try", 82, 17, -2, "serif"],
+  ["again.", 20, 21, -2, "serif"],
+  ["to create one's own world takes courage.", 44, 22, -2, "serif"],
+  ["(fragment)", 88, 30, -4, "circled"],
+  ["better to fail in originality, than to succeed in imitation", 10, 33, 2, "small"],
+  ["music doesn't lie.", 34, 35, 3, "small"],
+  ["to dream", 70, 40, 3, "serif"],
+  ["dream it. see it. believe it.", 16, 47, -2, "struck"],
+  ["the world sleeps", 48, 49, -3, "struck"],
+  ["good luck", 84, 55, 2, "struck"],
+  ["play what's not there.", 66, 68, -2, "serif"],
+  ["believe in it", 62, 86, 1, "small"]
+];
+const notesEl = document.getElementById("notes");
+// phones get a lighter mind: only the short notes (20 characters or less), at most 8, with room to breathe
+const phoneX = [6, 52, 24, 62, 10, 46, 18, 56];
+const DEPTHS = [0.9, 0.25, 0.6, 1, 0.35, 0.75, 0.15, 0.55, 0.95, 0.3, 0.7, 0.2, 0.85, 0.45, 0.65];
+const phoneQuery = window.matchMedia("(max-width: 599px)");
+const drawNotes = () => {
+  const narrow = phoneQuery.matches;
+  notesEl.textContent = "";
+  const shown = narrow ? NOTES.filter(n => n[0].trim().length <= 20).slice(0, 8) : NOTES;
+  shown.forEach(([t, x, y, r, c], k) => {
+    const n = el("span", { className: "note " + c }, t);
+    if (narrow) {
+      n.style.left = phoneX[k % phoneX.length] + "%";
+      n.style.top = (12 + k * (50 / Math.max(1, shown.length - 1))) + "%";
+    } else {
+      n.style.left = x + "%"; n.style.top = y + "%";
+    }
+    n.style.setProperty("--r", r + "deg");
+    const d = DEPTHS[k % DEPTHS.length];            // 0 = far back, 1 = right up close
+    n.style.setProperty("--d", d);
+    n.style.setProperty("--s", (0.82 + d * 0.3).toFixed(2));
+    n.style.setProperty("--b", ((1 - d) * 0.9).toFixed(2) + "px");
+    notesEl.appendChild(n);
+  });
+};
+drawNotes();
+phoneQuery.addEventListener("change", drawNotes);   // redraw if the window is resized across the line
+
+// the notes the light reveals are drawn above; this section moves the light.
+const splash = document.getElementById("top");
+const light = { x: 0.7, y: 0.4, tx: 0.7, ty: 0.4, idle: 0 };
+const setLight = () => {
+  splash.style.setProperty("--x", (light.x * 100).toFixed(2) + "%");
+  splash.style.setProperty("--y", (light.y * 100).toFixed(2) + "%");
+};
+setLight();
+const setI = v => splash.style.setProperty("--i", v.toFixed(3));
+if (calm) {
+  setI(0.8);
+} else {
+  const aim = (cx, cy) => {
+    const r = splash.getBoundingClientRect();
+    light.tx = (cx - r.left) / r.width; light.ty = (cy - r.top) / r.height; light.idle = 0;
+  };
+  splash.addEventListener("pointermove", e => aim(e.clientX, e.clientY));
+  splash.addEventListener("touchmove", e => aim(e.touches[0].clientX, e.touches[0].clientY), { passive: true });
+
+  // a bad bulb that won't stay on: one soft dip every few seconds. never more than one flash per 2.5s
+  // (a harsher strobe than this can trigger photosensitive reactions)
+  const flick = { next: 2000, until: 0, dim: 0.35 };
+  let t0 = performance.now(), raf = 0;
+  const frame = now => {
+    raf = 0;
+    if (!splashOn || document.hidden) return;        // nothing to draw: stop until woken
+    const dt = Math.min(50, now - t0); t0 = now;
+    light.idle += dt;
+    if (light.idle > 2500) {            // wander like a searchlight when nobody is steering
+      const k = now / 1000;
+      light.tx = 0.5 + Math.sin(k * 0.23) * 0.38;
+      light.ty = 0.42 + Math.sin(k * 0.31 + 1.3) * 0.28;
+    }
+    light.x += (light.tx - light.x) * 0.06;
+    light.y += (light.ty - light.y) * 0.06;
+    setLight();
+    // parallax: close notes slide against the beam more than distant ones
+    notesEl.style.setProperty("--px", ((0.5 - light.x) * 70).toFixed(2) + "px");
+    notesEl.style.setProperty("--py", ((0.5 - light.y) * 45).toFixed(2) + "px");
+    splash.style.setProperty("--npx", ((0.5 - light.x) * 24).toFixed(2) + "px");
+    splash.style.setProperty("--npy", ((0.5 - light.y) * 16).toFixed(2) + "px");
+    let v = 0.92 + (Math.random() - 0.5) * 0.06;     // mostly on, with a slight buzz
+    if (now < flick.until) v = flick.dim;
+    else if (now > flick.next) {
+      flick.until = now + 140 + Math.random() * 220;
+      flick.next = flick.until + 2500 + Math.random() * 4000;
+    }
+    setI(v);
+    raf = requestAnimationFrame(frame);
+  };
+  wake = () => { if (!raf && splashOn && !document.hidden) { t0 = performance.now(); raf = requestAnimationFrame(frame); } };
+  document.addEventListener("visibilitychange", wake);
+  wake();
+}
+
+// mini bar shows once the splash is gone
+const minibar = document.getElementById("minibar");
+new IntersectionObserver(([e]) => {
+  minibar.classList.toggle("show", !e.isIntersecting);
+  splashOn = e.isIntersecting; wake();   // the light and flicker only run while the splash is visible
+}, { threshold: 0.08 }).observe(document.getElementById("top"));
+
+// the door: martael.com/4026 opens a letter that only exists here (served by the _redirects rewrite)
+const D = CONFIG.door || {};
+const doorLetter = (isOut && (D.letterOut || []).length) ? D.letterOut : (D.letter || []);
+if (/^\/4026\/?$/.test(location.pathname) && doorLetter.length) {
+  const via = document.querySelector('#margins-form input[name="via"]');
+  if (via) via.value = "door";   // any margin note they leave later arrives tagged "door"
+
+  const door = el("div", { className: "door", tabIndex: -1 });
+  door.setAttribute("role", "dialog");
+  door.setAttribute("aria-modal", "true");
+  door.setAttribute("aria-label", "a letter from martael");
+  const inner = el("div", { className: "door-inner" });
+  const k = el("p", { className: "gate-k", lang: "ja" }, "門");
+  k.setAttribute("aria-hidden", "true");
+  inner.appendChild(k);
+
+  const body = el("div", { className: "letter-body" });
+  const ps = doorLetter.map(() => body.appendChild(el("p")));
+  inner.appendChild(body);
+
+  const after = el("div", { className: "door-after" });
+  if (D.sample) {
+    const row = el("div", { className: "door-listen" });
+    row.appendChild(el("span", {}, "hear it before anyone else"));
+    addPlayer(row, D.sample, null, NEXT.title || "the next track", null, () => row.remove());   // no clip on the site: no row
+    after.appendChild(row);
+  }
+  if (NX.presave) {
+    after.appendChild(el("a", { className: "paper-btn door-presave", href: NX.presave, target: "_blank", rel: "noopener" }, "pre-save it, so it finds you first"));
+  }
+
+  const f = el("form", { className: "door-sign" });
+  f.innerHTML = '<label class="field"><span>sign that you found the door</span><input name="name" maxlength="60" required autocomplete="nickname" placeholder="your alias"></label><label class="field"><span>your email, never shown</span><input type="email" name="email" required autocomplete="email" placeholder="you@somewhere.com"></label><label class="consent"><input type="checkbox" name="consent" value="yes" required><span>i\'m happy for martael to keep my email to contact me about this. <a href="#privacy" data-open-privacy>privacy</a></span></label><button class="paper-btn" type="submit">i was here</button>';
+  const msg = el("p", { className: "form-msg" });
+  msg.setAttribute("role", "status");
+  f.addEventListener("submit", async e => {
+    e.preventDefault();
+    const b = f.querySelector("button");
+    b.disabled = true; msg.className = "form-msg"; msg.textContent = "sending...";
+    try {
+      const r = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ "form-name": "margins", note: "found the door", name: f.elements.namedItem("name").value, email: f.elements.namedItem("email").value, consent: "yes", via: "door" }).toString()
+      });
+      if (!r.ok) throw new Error();
+      store.set(f.elements.namedItem("name").value.trim()); showYou();
+      f.reset(); msg.className = "form-msg ok"; msg.textContent = "noted. you're in line for the first hundred, and door-finders get a 門 next to their name.";
+    } catch {
+      msg.className = "form-msg err"; msg.textContent = "that didn't go through. try again.";
+    }
+    b.disabled = false;
+  });
+
+  const leave = el("button", { className: "door-leave", type: "button" }, "enter the world ↓");
+  after.append(f, msg, leave);
+  inner.appendChild(after);
+  door.appendChild(inner);
+  document.body.appendChild(door);
+  document.body.classList.add("door-locked");
+  const behind = [...document.body.children].filter(n => n !== door && !n.matches("script"));
+  behind.forEach(n => { n.inert = true; });          // the page behind the letter can't be tabbed into
+  requestAnimationFrame(() => door.classList.add("open"));
+  door.focus();
+
+  // type the letter out, line by line; a tap skips to the end
+  let done = false, timer = 0;
+  const finish = () => {
+    if (done) return; done = true; clearTimeout(timer);
+    doorLetter.forEach((t, i) => { ps[i].textContent = t; ps[i].classList.remove("cursor"); });
+    after.classList.add("show");
+  };
+  if (calm) finish();
+  else {
+    let li = 0, ci = 0;
+    const type = () => {
+      if (done) return;
+      if (li >= doorLetter.length) return finish();
+      const p = ps[li], t = doorLetter[li];
+      p.classList.add("cursor");
+      p.textContent = t.slice(0, ++ci);
+      if (ci >= t.length) { p.classList.remove("cursor"); li++; ci = 0; timer = setTimeout(type, 700); }
+      else timer = setTimeout(type, 30 + Math.random() * 45);
+    };
+    timer = setTimeout(type, 1100);
+    door.addEventListener("click", e => { if (!e.target.closest("button, input, label, a")) finish(); });
+  }
+
+  const close = () => {
+    if (nowPlaying) nowPlaying();
+    door.classList.remove("open");
+    behind.forEach(n => { n.inert = false; });
+    document.body.classList.remove("door-locked");
+    setTimeout(() => door.remove(), calm ? 0 : 900);
+  };
+  leave.addEventListener("click", close);
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && document.body.contains(door)) close(); });
+}
+</script>
+</body>
+
+    <!-- 
+         .---.
+        /     \
+       | () () |   仮面 / THE MASK
+        -     -   freedom to express.
+           £
+    -->
+
+</html>
